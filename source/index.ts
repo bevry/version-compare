@@ -15,7 +15,6 @@ export default function versionCompare(
 	current: Version,
 	other: Version
 ): VersionIs {
-	// https://github.com/substack/versionComparator-compare/pull/4
 	const cp = String(current).split('.')
 	const op = String(other).split('.')
 	for (let depth = 0; depth < Math.min(cp.length, op.length); depth++) {
