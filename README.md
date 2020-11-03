@@ -140,7 +140,3 @@ and licensed under:
 
 <!-- /LICENSE -->
 
-
-```
-
-```
