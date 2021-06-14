@@ -1,6 +1,6 @@
 {
   "name": "version-compare",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Comparator to determine if a version is less than, equivalent to, or greater than another version",
   "homepage": "https://github.com/bevry/version-compare",
   "license": "MIT",
@@ -31,7 +31,7 @@
   ],
   "badges": {
     "list": [
-      "travisci",
+      "githubworkflow",
       "npmversion",
       "npmdownloads",
       "daviddm",
@@ -48,6 +48,7 @@
       "wishlist"
     ],
     "config": {
+      "githubWorkflow": "bevry",
       "githubSponsorsUsername": "balupton",
       "buymeacoffeeUsername": "balupton",
       "cryptoURL": "https://bevry.me/crypto",
@@ -57,7 +58,6 @@
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
       "wishlistURL": "https://bevry.me/wishlist",
-      "travisTLD": "com",
       "githubUsername": "bevry",
       "githubRepository": "version-compare",
       "githubSlug": "bevry/version-compare",
@@ -105,7 +105,7 @@
         "require"
       ],
       "engines": {
-        "node": "4 || 6 || 8 || 10 || 12 || 14 || 15",
+        "node": "4 || 6 || 8 || 10 || 12 || 14",
         "browsers": false
       }
     },
@@ -120,7 +120,7 @@
         "import"
       ],
       "engines": {
-        "node": "12 || 14 || 15",
+        "node": "12 || 14",
         "browsers": false
       }
     },
@@ -151,20 +151,20 @@
   "deno": "edition-deno/index.ts",
   "devDependencies": {
     "@bevry/update-contributors": "^1.18.0",
-    "@typescript-eslint/eslint-plugin": "^4.6.0",
-    "@typescript-eslint/parser": "^4.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
     "assert-helpers": "^8.1.0",
-    "eslint": "^7.12.1",
+    "eslint": "^7.28.0",
     "eslint-config-bevry": "^3.23.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "kava": "3.2.0",
     "make-deno-edition": "^1.2.0",
-    "prettier": "^2.1.2",
-    "projectz": "^2.17.0",
-    "surge": "^0.21.6",
-    "typedoc": "^0.19.2",
-    "typescript": "^4.0.5",
+    "prettier": "^2.3.1",
+    "projectz": "^2.18.0",
+    "surge": "^0.23.0",
+    "typedoc": "^0.20.36",
+    "typescript": "^4.3.2",
     "valid-directory": "^3.5.0"
   },
   "scripts": {
@@ -178,7 +178,7 @@
     "our:meta": "npm run our:meta:contributors && npm run our:meta:docs && npm run our:meta:projectz",
     "our:meta:contributors": "update-contributors",
     "our:meta:docs": "npm run our:meta:docs:typedoc",
-    "our:meta:docs:typedoc": "rm -Rf ./docs && typedoc --mode file --exclude '**/+(*test*|node_modules)' --excludeExternals --name \"$npm_package_name\" --readme ./README.md --out ./docs ./source",
+    "our:meta:docs:typedoc": "rm -Rf ./docs && typedoc --exclude '**/+(*test*|node_modules)' --excludeExternals --out ./docs ./source",
     "our:meta:projectz": "projectz compile",
     "our:release": "npm run our:release:prepare && npm run our:release:check-changelog && npm run our:release:check-dirty && npm run our:release:tag && npm run our:release:push",
     "our:release:check-changelog": "cat ./HISTORY.md | grep v$npm_package_version || (echo add a changelog entry for v$npm_package_version && exit -1)",

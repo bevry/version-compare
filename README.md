@@ -7,7 +7,7 @@
 
 <!-- BADGES/ -->
 
-<span class="badge-travisci"><a href="http://travis-ci.com/bevry/version-compare" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/com/bevry/version-compare/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-githubworkflow"><a href="https://github.com/bevry/version-compare/actions?query=workflow%3Abevry" title="View the status of this project's GitHub Workflow: bevry"><img src="https://github.com/bevry/version-compare/workflows/bevry/badge.svg" alt="Status of the GitHub Workflow: bevry" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/version-compare" title="View this project on NPM"><img src="https://img.shields.io/npm/v/version-compare.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/version-compare" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/version-compare.svg" alt="NPM downloads" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/bevry/version-compare" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/version-compare.svg" alt="Dependency Status" /></a></span>
@@ -57,7 +57,7 @@ console.log(['1.1', '2', '1.0'].sort(versionCompare))
 <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
 
 ``` typescript
-import pkg from 'https://unpkg.com/version-compare@^1.1.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/version-compare@^1.2.0/edition-deno/index.ts'
 ```
 
 <h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
@@ -139,4 +139,3 @@ and licensed under:
 <ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
 
 <!-- /LICENSE -->
-
