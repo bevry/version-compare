@@ -60,9 +60,9 @@ const fixtures: Array<{
 kava.suite('version-compare', function (suite, test) {
 	for (const fixture of fixtures) {
 		const name = `versionCompare(${JSON.stringify(
-			fixture.input[0]
+			fixture.input[0],
 		)}, ${JSON.stringify(fixture.input[1])}) = ${JSON.stringify(
-			fixture.expected
+			fixture.expected,
 		)}`
 		test(name, function () {
 			equal(versionCompare(...fixture.input), fixture.expected)
