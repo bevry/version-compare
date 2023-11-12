@@ -1,6 +1,6 @@
 {
   "name": "version-compare",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Comparator to determine if a version is less than, equivalent to, or greater than another version",
   "homepage": "https://github.com/bevry/version-compare",
   "license": "Artistic-2.0",
@@ -80,7 +80,7 @@
     "url": "https://github.com/bevry/version-compare.git"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "editions": [
     {
@@ -105,7 +105,7 @@
         "require"
       ],
       "engines": {
-        "node": "4 || 6 || 8 || 10 || 12 || 14 || 16 || 18 || 20 || 21",
+        "node": "6 || 8 || 10 || 12 || 14 || 16 || 18 || 20 || 21",
         "browsers": false
       }
     },
@@ -151,12 +151,12 @@
   "deno": "edition-deno/index.ts",
   "devDependencies": {
     "@bevry/update-contributors": "^1.23.0",
-    "@types/node": "^20.8.10",
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
-    "assert-helpers": "^8.4.0",
-    "eslint": "^8.52.0",
-    "eslint-config-bevry": "^3.28.0",
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "assert-helpers": "^10.1.0",
+    "eslint": "^8.53.0",
+    "eslint-config-bevry": "^3.29.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "kava": "3.2.0",
