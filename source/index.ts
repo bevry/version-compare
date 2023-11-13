@@ -13,7 +13,7 @@ export enum VersionIs {
  */
 export default function versionCompare(
 	current: Version,
-	other: Version,
+	other: Version
 ): VersionIs {
 	const cp = String(current).split('.')
 	const op = String(other).split('.')
